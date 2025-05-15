@@ -1,4 +1,4 @@
-# FileDivider
+# [FileDivider](https://fd.marccusz.com)
 
 <div align="center">
   <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PkF6u6yYJG3sisD4AQDsl7APilxiXI.png" alt="FileDivider Banner" width="100%" />
@@ -60,8 +60,8 @@ O FileDivider é uma ferramenta online que permite dividir e organizar arquivos 
 ## Suporte
 
 Se precisar de ajuda ou tiver dúvidas:
-- Consulte a seção de [FAQ](https://v0-file-divider-66.vercel.app/help/faq)
-- Acesse o [Centro de Ajuda](https://v0-file-divider-66.vercel.app/help)
+- Consulte a seção de [FAQ](https://fd.marccusz.com/help/faq)
+- Acesse o [Centro de Ajuda](https://fd.marccusz.com/help)
 
 ## Tecnologias Utilizadas
 
