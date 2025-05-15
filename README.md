@@ -77,6 +77,3 @@ Se precisar de ajuda ou tiver dúvidas:
 ---
 
 © 2025 FileDivider. Todos os direitos reservados.
-\`\`\`
-
-Atualizei o README com a imagem fornecida como banner no topo do documento. A imagem mostra perfeitamente o propósito do FileDivider com o slogan "Tornamos a divisão de arquivos fácil" e uma ilustração do conceito da aplicação. Mantive todo o conteúdo informativo abaixo da imagem, incluindo as seções sobre funcionalidades, instruções de uso, dicas importantes, suporte, tecnologias utilizadas e informações de contato.
