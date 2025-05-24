@@ -30,6 +30,7 @@ export interface ProcessPdfRequest {
 export interface ProcessTxtRequest {
   breakByLines: boolean
   fileName?: string
+  numberOfLines: number
   extractionHelpers?: Record<string, string>
 }
 
@@ -327,19 +328,14 @@ export async function processPdf(file: File, request: ProcessPdfRequest): Promis
       ? `${API_BASE_URL}/FileDivisor/pdf`
       : `${API_BASE_URL}/FileDivisor/pdf/without-template`
 
-  const urlParams = new URLSearchParams()
-
-  // Adiciona o nome do arquivo à query string SE a URL for "api/FileDivisor/pdf"
-  if (url.endsWith("/FileDivisor/pdf") && request.fileName) {
-    urlParams.append("fileName", request.fileName)
-  } else if (request.fileName) {
-    // Senão, adiciona o fileName ao FormData
-    formData.append("FileName", request.fileName)
-  }
-
-  // Se estiver usando template, adiciona o templateId como parâmetro de URL
   if (request.templateId && request.templateId !== "no-template") {
     url += `?templateId=${request.templateId}`
+  }
+
+  if (request.templateId && request.templateId !== "no-template" && request.fileName) {
+    url += `&fileName=${request.fileName}`
+  } else if (request.fileName) {
+    formData.append("FileName", request.fileName)
   }
 
   // Adiciona os auxiliares de extração como campos do FormData
