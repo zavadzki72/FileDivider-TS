@@ -327,9 +327,6 @@ export async function processPdf(file: File, request: ProcessPdfRequest): Promis
       ? `${API_BASE_URL}/FileDivisor/pdf`
       : `${API_BASE_URL}/FileDivisor/pdf/without-template`
 
-  const urlParams = new URLSearchParams()
-
-  // Adiciona o nome do arquivo à query string SE a URL for "api/FileDivisor/pdf"
   if (url.endsWith("/FileDivisor/pdf") && request.fileName) {
     urlParams.append("fileName", request.fileName)
   } else if (request.fileName) {
